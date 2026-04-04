@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - Vrymart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        if (!sessionStorage.getItem('lang_redirected')) {
+            var userLang = navigator.language || navigator.userLanguage;
+            if (userLang.toLowerCase().includes('en')) {
+                sessionStorage.setItem('lang_redirected', 'true');
+                window.location.href = 'en/' + (window.location.pathname.split('/').pop() || 'index.html');
+            }
+        }
+    </script>
+    <style>
+        .legal-content { max-width: 800px; margin: 0 auto; padding: 120px 20px 80px 20px; }
+        .legal-content h1 { font-size: 2.5rem; margin-bottom: 16px; color: var(--text-primary); letter-spacing: -0.02em; }
+        .legal-content h2 { font-size: 1.4rem; margin-top: 40px; margin-bottom: 12px; color: var(--text-primary); }
+        .legal-content p { color: var(--text-secondary); line-height: 1.7; margin-bottom: 20px; font-size: 0.95rem; }
+        .legal-content ul { color: var(--text-secondary); padding-left: 20px; margin-bottom: 20px; font-size: 0.95rem; line-height: 1.6; }
+        .legal-content li { margin-bottom: 8px; }
+    </style>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="./" class="logo" style="text-decoration: none; color: var(--text-primary);">Vrymart.</a>
+            <nav class="nav-links">
+                <a href="./#como-funciona" style="color: var(--text-secondary); text-decoration: none;">Cómo Funciona</a>
+                <a href="./#casos-de-uso" style="color: var(--text-secondary); text-decoration: none;">Soluciones</a>
+                <a href="./#waitlist" class="btn btn-primary" style="margin-left: 12px;">Lista de Espera</a>
+                <div class="lang-switcher" style="margin-left: 16px; display: inline-flex; gap: 8px; font-weight: 500;">
+                    <span style="color: var(--text-primary); border-bottom: 2px solid var(--accent-primary);">ES</span>
+                    <a href="en/privacy" style="color: var(--text-secondary); text-decoration: none; border-bottom: 2px solid transparent;">EN</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="legal-content" style="flex-grow: 1; width: 100%; box-sizing: border-box;">
+        <span class="badge-kyc" style="display: inline-block; padding: 6px 12px; background: rgba(5, 5, 5, 0.1); color: var(--text-primary); font-size: 0.8rem; font-weight: bold; border-radius: 4px; margin-bottom: 24px; text-transform: uppercase;">Global Privacy Framework</span>
+        <h1>Política de Privacidad y Tratamiento de Algoritmos</h1>
+        <p>Vrymart Inc. concibe la ciberseguridad corporativa y el sigilo en la transmisión B2B como el pilar fundacional del ecosistema. En cumplimiento con la GDPR Europea y la Ley CCPA del Estado de California, promulgamos el protocolo subyacente de retención.</p>
+        <h2>1. Base Legal y Necesidad de Procesamiento</h2>
+        <p>Los metadatos procesados son obtenidos amparados bajo las doctrinas jurídicas del <em>"Consentimiento Explícito"</em> y la <em>"Necesidad Contractual"</em> (brindar la logística y factura de servicios), aunado al <em>"Interés Legítimo"</em> corporativo inalienable de Vrymart para rastrear y obstruir sistemáticamente el fraude y la ingeniería social.</p>
+        <h2>2. Retención Cero y Volatilidad ("Zero-Knowledge")</h2>
+        <p>Bajo la regla técnica estricta de procesamiento en memoria volátil, cualquier archivo plano crítico, dataset o vector que un comprador cargue para orquestar la operativa del bot es tratado de forma efímera. <strong>Vrymart desencadena la purga algorítmica, automática e irreversible de dichos soportes documentales inmediatamente concluido el ciclo de cómputo</strong> de la petición, anulando las ventanas de exfiltración. Está terminantemente prohibida la minería de datos (Data Mining) sobre el contenido transitado.</p>
+        <h2>3. Arquitectura de Túneles Criptográficos (Pagos)</h2>
+        <p>Obedeciendo las normativas financieras PCI-DSS, Vrymart es un ente ciego financieramente: jamás almacena, visualiza ni procesa fotogramas de tarjetas o llaves CVC en sus alojamientos. Nuestras instancias subcontratan directamente la factoría transaccional de Stripe Inc. cruzando la información al vuelo a través de protocolos de red TLS/SSL de encriptación militar (256-bits).</p>
+        <h2>4. Data Brokers y Pactos de Incomunicación Comercial</h2>
+        <p>Las nomenclaturas e historiales operacionales, como correos electrónicos, patentes IP y jerarquías de cuentas que yacen alojados en nuestras bases operativas blindadas no poseen propósito de comercialización. <strong>Garantizamos civil y legalmente la neutralidad de venta restrictiva</strong>: jamás empaquetaremos, arrendaremos ni liquidaremos identificadores personales hacia corredores informáticos publicitarios u operadores de Telemetría exterior.</p>
+        <h2>5. Doctrina de Confidencialidad Delegada (Third-Party API)</h2>
+        <p>Al instanciarnos como nodo transaccional puente, el archivo informático subido a nuestros formularios navega hacia los puntos finales aislados del Creador (API Endpoint) que orquesta el script. Aunque Vrymart somete a destrucción automática su copia de tránsito, y exige por Contrato Maestro la misma autodestrucción al programador B2B; el comprador asume financieramente el riesgo inherente de exfiltración que un desarrollador deshonesto pudiese propiciar del lado del servidor final, instando el respaldo sobre sistemas NDA directos.</p>
+        <h2>6. Escudos CSRF y Trazas Analíticas No-Invasivas (Do Not Track)</h2>
+        <p>Empleamos exiguamente cookies sesionales funcionales requeridas al estricto efecto de bloquear suplantación identitaria (CSRF). Nuestros servidores toleran con neutralidad técnica la configuración nativa <em>"Do-Not-Track" (DNT)</em> transmitida pacíficamente por los navegadores de orígenes empresariales sin discriminar degradando el acceso.</p>
+        <h2>7. Protocolo Inmediato de Brecha y Reacción Constatada (Data Breach)</h2>
+        <p>Ostentando un control periférico constante de red en todas las instancias del clúster; y prefigurando el hipotético alcance a un quiebre de la barrera de nuestra fortaleza ("Data Exfiltration Breach"). Vrymart asume el pacto innegociable de reportar las notificaciones de emergencia tanto a los actores corporativos impactados y a la fiscalía cibernética central <strong>en una ventana de tiempo imperativa no superior a Setenta y dos (72) horas constitucionales</strong> desde su confirmación técnica por nuestro equipo auditorio.</p>
+        <h2>8. Exclusión COPPA (Restricción Absoluta por Minoría)</h2>
+        <p>Encausando nuestro modelo productivo, nuestro software es innegablemente un conducto financiero exclusivo B2B. Por tanto <strong>el flujo activo, inscripción a betas y acceso a interfaces está férreamente vedado por nuestra junta a menores de Dieciocho (18) años de edad civil</strong>. Ante cualquier descubrimiento intrusivo, la cuenta inhabilitará por defecto a purga inminente total protegiendo las cuotas regulatorias protectoras.</p>
+        <h2>9. Derechos Globales y Conflictos de Excepción Registral (GDPR / BSA)</h2>
+        <p>Cualquier Usuario ostenta derecho inalienable (Derecho al Olvido) para acceder, rectificar o compeler a <strong>legal@vrymart.com</strong> el borrado estructural de toda su data social de marketing y metadatos logísticos. <strong>Excepción de Ley Federal:</strong> A fin de subsanar conflictos jurisdiccionales imperativos ante el Departamento del Tesoro de EE.UU. (Anti-lavado), cualquier paquete de identidad biográfica capturado formalmente (KYC) e historiales contables de pago quedarán estrictamente exentos del derecho al olvido, preservados y aislados durante cinco (5) años sin excepciones legales.</p>
+    </main>
+    <footer class="footer">
+        <div class="container text-center" style="font-size: 0.85rem; color: var(--text-secondary);">
+            <p>&copy; 2026 Vrymart Inc. Documentación Legal. Pagos procesados de forma segura vía Stripe.</p>
+        </div>
+    </footer>
+</body>
+</html>

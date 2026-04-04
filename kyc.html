@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Políticas Anticorrupción (KYC/AML) - Vrymart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        if (!sessionStorage.getItem('lang_redirected')) {
+            var userLang = navigator.language || navigator.userLanguage;
+            if (userLang.toLowerCase().includes('en')) {
+                sessionStorage.setItem('lang_redirected', 'true');
+                window.location.href = 'en/' + (window.location.pathname.split('/').pop() || 'index.html');
+            }
+        }
+    </script>
+    <style>
+        .legal-content { max-width: 800px; margin: 0 auto; padding: 120px 20px 80px 20px; }
+        .legal-content h1 { font-size: 2.5rem; margin-bottom: 8px; color: var(--text-primary); letter-spacing: -0.02em; }
+        .legal-content h2 { font-size: 1.4rem; margin-top: 40px; margin-bottom: 12px; color: var(--text-primary); }
+        .legal-content p { color: var(--text-secondary); line-height: 1.7; margin-bottom: 20px; font-size: 0.95rem; }
+        .badge-kyc { display: inline-block; padding: 6px 12px; background: rgba(255, 98, 0, 0.1); color: var(--accent-primary); font-size: 0.8rem; font-weight: bold; border-radius: 4px; margin-bottom: 24px; text-transform: uppercase;}
+    </style>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="./" class="logo" style="text-decoration: none; color: var(--text-primary);">Vrymart.</a>
+            <nav class="nav-links">
+                <a href="./#como-funciona" style="color: var(--text-secondary); text-decoration: none;">Cómo Funciona</a>
+                <a href="./#casos-de-uso" style="color: var(--text-secondary); text-decoration: none;">Soluciones</a>
+                <a href="./#waitlist" class="btn btn-primary" style="margin-left: 12px;">Lista de Espera</a>
+                <div class="lang-switcher" style="margin-left: 16px; display: inline-flex; gap: 8px; font-weight: 500;">
+                    <span style="color: var(--text-primary); border-bottom: 2px solid var(--accent-primary);">ES</span>
+                    <a href="en/kyc" style="color: var(--text-secondary); text-decoration: none; border-bottom: 2px solid transparent;">EN</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="legal-content" style="flex-grow: 1; width: 100%; box-sizing: border-box;">
+        <span class="badge-kyc" style="display: inline-block; padding: 6px 12px; background: rgba(255, 98, 0, 0.1); color: var(--accent-primary); font-size: 0.8rem; font-weight: bold; border-radius: 4px; margin-bottom: 24px; text-transform: uppercase;">Enterprise AML/KYC Framework</span>
+        <h1>Control AML, KYC y Cumplimiento Normativo</h1>
+        <p>Vrymart Inc. mantiene una estricta política de tolerancia cero ante el fraude, el lavado de activos y el financiamiento del terrorismo. Nuestro Programa de Cumplimiento AML está diseñado conforme a la Ley de Secreto Bancario de EE.UU. (BSA), la Ley PATRIOT y las normativas dictaminadas por FinCEN y GAFI.</p>
+        <h2>1. Oficial de Cumplimiento Designado</h2>
+        <p>Vrymart cuenta con un Oficial de Cumplimiento AML (Compliance Officer) designado formalmente, encargado directo de la supervisión, actualización y ejecución del marco legal. Este directivo coordina auditorías imparciales permanentes para garantizar que nuestra infraestructura se alinee a las directivas tecnológicas de prevención delictiva.</p>
+        <h2>2. Procedimiento CIP (Customer Identification)</h2>
+        <p>Previo a la monetización, es ineludible la autenticación biométrica y documental vía Stripe Identity. Vrymart retiene el derecho inquebrantable de cruzar esta información con bases de datos gubernamentales mundiales antes de la activación pública de una cuenta de Creador.</p>
+        <h2>3. Conozca a su Negocio (KYB) y Residencia Comprobable (UBO)</h2>
+        <p>Cuando el Vendedor constituye un ente jurídico, aplicamos el protocolo estricto KYB (Know Your Business). Ejecutamos una verificación sobre la corporación y sobre sus Dueños Beneficiarios Reales (UBOs al >25%). Esta matriz regulatoria <strong>exige la corroboración de un domicilio fiscal y geográfico verificable</strong>. Si nuestros algoritmos de riesgo detectan discrepancias críticas de ubicación al momento de solicitar retiros (Ej. inconsistencias de IP, proxies sospechosos o datos bancarios irregulares), Vrymart y Stripe retendrán la liquidez de la cuenta preventivamente hasta que el usuario provea comprobantes (como facturas de servicios) que certifiquen su verdadera jurisdicción inicial.</p>
+        <h2>4. Diligencia Debida Reforzada (EDD) y PEPs</h2>
+        <p>Vrymart aplica un nivel superior de escrutinio cooperativo (EDD) a cuentas transaccionales que presenten picos inusuales de facturación, alta dispersión geográfica o que involucren Personas Expuestas Políticamente (PEPs). Requerimos pruebas de origen lícito de fondos ante cualquier comportamiento que alcance nuestros umbrales de capitalización mensual.</p>
+        <h2>5. Listas Restrictivas (OFAC) y Sanciones Globales</h2>
+        <p>La arquitectura del marketplace inhibe en tiempo real toda transacción desde y hacia jurisdicciones no cooperativas, territorios embargados, y entidades perfiladas en las Listas de Ciudadanos Especialmente Designados de la OFAC, SDN de Estados Unidos y bloqueos de la Unión Europea.</p>
+        <h2>6. Auditoría Técnica de Anti-Lavado Subyacente</h2>
+        <p>Inhabilitamos el esquema de "bots vacíos". Cada producto tecnológico se somete a validación de conexión API en vivo para descartar la comercialización fraudulenta de servicios carentes de capacidad (soluciones fachada), asegurando que cada transacción económica ampare poder computacional demostrable.</p>
+        <h2>7. Reportes de Actividad Sospechosa (SAR)</h2>
+        <p>Si los modelos de Vrymart detectan transacciones circulares, simuladas, o tácticas de pitufeo computacional (smurfing), se emitirá un Reporte de Actividad Sospechosa ante agencias como FinCEN y autoridades federales. Bajo el mandato legal de <em>"No-Tipping Off"</em>, en caso de denuncia está prohibido que el personal de Vrymart notifique tácita o explícitamente al infractor sobre la investigación en curso.</p>
+        <h2>8. Retención Histórica de Registros (5 Años)</h2>
+        <p>Cumpliendo el lapso legal federal estipulado y no negociable, los expedientes KYC y la trazabilidad de los metadatos de transferencias en la plataforma permanecerán resguardados en bases de datos blindadas por un período mínimo de 5 (cinco) años calendario, incluso de forma póstuma a la eliminación de una cuenta, estando eternamente a disposición judicial.</p>
+        <h2>9. Revocación y Congelamiento de Fondos</h2>
+        <p>Ante vulneraciones objetivas al programa AML, Vrymart ejecutará como primer recaudo procesal el congelamiento unilateral total del saldo custodiado de los actores implicados y la inhibición irreversible de las cuentas conectadas, cediendo la disposición de los mismos únicamente mediante orden de una autoridad federal competente.</p>
+    </main>
+    <footer class="footer">
+        <div class="container text-center" style="font-size: 0.85rem; color: var(--text-secondary);">
+            <p>&copy; 2026 Vrymart Inc. Documentación Legal. Pagos procesados de forma segura vía Stripe.</p>
+        </div>
+    </footer>
+</body>
+</html>
